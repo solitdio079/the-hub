@@ -1,1 +1,1 @@
-export const serverUrl = "http://localhost:3000"
+export const serverUrl = "http://g4gc4wogw0skcg80c8ww0ggk.130.61.118.211.sslip.io/"
