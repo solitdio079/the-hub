@@ -52,12 +52,12 @@ app.use('/auth', authRouter)
 app.use("/users", userRouter)
 app.use("/posts", postRouter)
 
-const port = process.env.PORT || 5500
+const port = process.env.PORT || 3000
 
 app.get('/', (req, res) => {
   res.send('Hello, homepage here!')
 })
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0',() => {
   console.log(`Listening to port ${port}`)
 })
