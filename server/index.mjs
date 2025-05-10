@@ -13,7 +13,7 @@ import userRouter from './routes/users.mjs'
 import postRouter from './routes/posts.mjs'
 
 const corsOptions = {
-  origin: ['http://localhost:5173', 'https://www.bysolitdio.net',"http://blog.bysolitdio.net"],
+  origin: ['http://localhost:5173', 'https://www.bysolitdio.net',"https://blog.bysolitdio.net"],
 
   //credentials: true,
   optionsSuccessStatus: 200,

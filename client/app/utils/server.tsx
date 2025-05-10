@@ -1,1 +1,1 @@
-export const serverUrl = "http://api.bysolitdio.net"
+export const serverUrl = "https://api.bysolitdio.net"
