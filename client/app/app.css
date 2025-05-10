@@ -1,0 +1,205 @@
+@import "tailwindcss";
+@plugin "daisyui"; 
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: true;
+  --color-primary: "#E35F21";
+  --color-secondary: "#EEF8F7";
+  --color-white: '#EEF8F7';
+}
+
+
+@tailwind utilities;
+
+.tiptap ul p,
+.tiptap ol p {
+  @apply inline;
+}
+ 
+.tiptap p.is-editor-empty:first-child::before {
+  @apply pointer-events-none float-left h-0 text-sm;
+}
+  /* Heading styles */
+  .tiptap h1, 
+  .tiptap h2, 
+  .tiptap h3, 
+  .tiptap h4, 
+  .tiptap h5, 
+  .tiptap h6 {
+    @apply leading-4 my-5 text-pretty;
+   
+   
+  }
+
+  .tiptap h1, 
+  .tiptap h2 {
+   @apply  mt-14 mb-6;
+   
+  }
+
+  .tiptap h1 { 
+   @apply text-3xl my-5; 
+  }
+
+  .tiptap h2 { 
+    @apply text-2xl my-4; 
+  }
+
+  .tiptap h3 { 
+     @apply text-xl my-3; 
+  }
+
+  .tiptap h4, 
+  .tiptap h5, 
+  .tiptap h6 { 
+    @apply text-lg my-2;
+  }
+  /* Blockquote event styling */
+.tiptap blockquote {
+    @apply border-l-4 border-gray-500 my-6 pl-4 text-white;
+    
+  
+}
+.tiptap {
+    @apply text-white
+}
+.tiptap ul, 
+ .tiptap ol {
+    @apply px-4 mt-5 mr-4 mb-5 ml-2;
+   
+ } 
+  .tiptap ul li p,
+  .tiptap ol li p {
+      @apply my-4;
+    }
+  
+
+.tiptap pre {
+    @apply bg-black rounded-lg text-white font-mono my-6 px-4 py-3;
+  
+}
+
+  .tiptap pre code {
+    @apply bg-none text-inherit text-[0.8rem] p-0;
+     
+    }
+
+    /* Code styling */
+   .tiptap pre   .hljs-comment,
+    .tiptap pre .hljs-quote {
+      @apply text-[#616161];
+    }
+
+   .tiptap pre .hljs-variable,
+    .tiptap pre .hljs-template-variable,
+    .tiptap pre .hljs-attribute,
+   .tiptap pre .hljs-tag,
+   .tiptap pre .hljs-regexp,
+    .tiptap pre .hljs-link,
+   .tiptap pre .hljs-name,
+   .tiptap pre .hljs-selector-id,
+    .tiptap pre .hljs-selector-class {
+         @apply text-[#f98181];
+    
+    }
+
+    .hljs-number,
+    .hljs-meta,
+    .hljs-built_in,
+    .hljs-builtin-name,
+    .hljs-literal,
+    .hljs-type,
+    .hljs-params {
+         @apply text-[#fbbc88];
+     
+    }
+
+    .hljs-string,
+    .hljs-symbol,
+    .hljs-bullet {
+        @apply text-[#b9f18d];
+     
+    }
+
+    .hljs-title,
+    .hljs-section {
+       @apply text-[#faf594];
+    }
+
+    .hljs-keyword,
+    .hljs-selector-tag {
+       @apply text-[#70cff8];
+    }
+
+    .hljs-emphasis {
+      @apply italic;
+    }
+
+    .hljs-strong {
+     @apply font-bold;
+    }
+  
+    /* Image Styling */
+    .titap img {
+    @apply block max-h-96 my-6 max-w-full;
+  }
+  .titap img &.ProseMirror-selectednode {
+     @apply outline outline-4 outline-purple-400;
+    }
+
+    /* Youtube embed */
+  .tiptap div[data-youtube-video] {
+    @apply cursor-move pr-6 ;
+
+   
+  }
+.tiptap div[data-youtube-video]  iframe {
+     @apply border-black border-4 block min-h-52 min-w-52 outline-0 outline-transparent;
+     
+    }
+
+.tiptap div[data-youtube-video] &.ProseMirror-selectednode iframe {
+     @apply  outline-purple-400 outline-4 outline transition-[outline] duration-150;
+    }
+
+    /* Table-specific styling */
+  .tiptap table {
+   @apply border-collapse m-0 overflow-hidden table-fixed w-full;
+    }
+
+   .tiptap table td,
+   .tiptap table th {
+     @apply border border-solid border-black box-border min-w-4 py-2 px-3 relative align-top;
+      
+    }
+
+    .tiptap table th {
+      @apply bg-black font-bold text-left;
+    }
+
+    .tiptap table .selectedCell:after {
+      @apply bg-gray-500 content-none left-0 right-0 top-0 bottom-0 pointer-events-none absolute z-10;
+     
+      
+    }
+
+    .column-resize-handle {
+      @apply bg-purple-500 bottom-[-2px] pointer-events-none absolute right-[-2px] top-0 w-1;
+     
+    }
+  
+
+  .tableWrapper {
+    @apply my-6 mx-0 overflow-x-auto;
+   
+  }
+
+  &.resize-cursor {
+    @apply cursor-ew-resize;
+   
+  }
+ /* Link styles */
+  .tiptap a {
+ @apply text-primary cursor-pointer hover:text-secondary
+   
+  }
