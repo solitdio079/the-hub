@@ -25,7 +25,7 @@ router.post(
 router.get(
   '/login/email/verify',
   passport.authenticate('magiclink', {
-    successReturnToOrRedirect: 'http://localhost:5173/',
+    successReturnToOrRedirect: 'http://blog.bysolitdio.net/',
     failureMessage: 'Token Invalid',
   })
 )
