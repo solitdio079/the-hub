@@ -27,7 +27,7 @@
   .tiptap h4, 
   .tiptap h5, 
   .tiptap h6 {
-    @apply leading-4 my-5 text-pretty;
+    @apply my-5 text-pretty leading-12;
    
    
   }
@@ -62,7 +62,7 @@
   
 }
 .tiptap {
-    @apply text-white max-w-full overflow-auto p-2 lg:p-5 leading-6;
+    @apply text-white max-w-screen overflow-auto p-2 lg:p-5 leading-6;
 }
 .tiptap ul, 
  .tiptap ol {
