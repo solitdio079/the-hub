@@ -10,6 +10,9 @@
 
 
 @tailwind utilities;
+body{
+  @apply overflow-x-hidden max-w-screen;
+}
 
 
 .tiptap ul p,
