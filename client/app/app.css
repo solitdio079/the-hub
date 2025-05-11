@@ -27,7 +27,7 @@
   .tiptap h4, 
   .tiptap h5, 
   .tiptap h6 {
-    @apply my-5 text-pretty leading-12;
+    @apply my-5 text-pretty leading-8 font-bold;
    
    
   }
