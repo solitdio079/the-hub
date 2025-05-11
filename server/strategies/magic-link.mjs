@@ -29,7 +29,7 @@ passport.use(
     },
     async function send(user, token) {
           var link =
-            'http://localhost:3000/auth/login/email/verify?token=' + token
+            'https://api.bysolitdio.net/auth/login/email/verify?token=' + token
       sendSmtpEmail.subject = 'Login to bySolitdio.net!'
       sendSmtpEmail.htmlContent =
         '<h3>Hello!</h3><p>Click the link below to finish signing in to bySolitdio.</p><p><a href="' +
