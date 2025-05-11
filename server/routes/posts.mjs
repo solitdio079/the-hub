@@ -117,11 +117,16 @@ router.put(
       if (!oldPost) return res.send({ error: `Post with ${id} not found!` })
 
       // Remove Images if necessary
-      oldPost.images.forEach((item, index) => {
-        if (item !== '' && item !== data.images[index]) {
-          fs.unlinkSync(destination + item)
-        }
-      })
+      try {
+        oldPost.images.forEach((item, index) => {
+          if (item !== '' && item !== data.images[index]) {
+            fs.unlinkSync(destination + item)
+          }
+        })
+      } catch (error) {
+        
+      }
+      
       // Indert new Post in database
       try {
         await Posts.findByIdAndUpdate(id, data)
