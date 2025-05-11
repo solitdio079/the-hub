@@ -62,11 +62,11 @@
   
 }
 .tiptap {
-    @apply text-white max-w-screen overflow-auto p-2 lg:p-5 leading-6;
+    @apply text-white max-w-screen overflow-x-hidden p-2 lg:p-5 leading-6;
 }
 .tiptap ul, 
  .tiptap ol {
-    @apply px-4 mt-5 mr-4 mb-5 ml-2;
+    @apply px-4 mt-5 mr-4 mb-5 ml-2 list-item;
    
  } 
   .tiptap ul li p,
