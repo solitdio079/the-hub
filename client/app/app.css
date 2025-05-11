@@ -11,6 +11,7 @@
 
 @tailwind utilities;
 
+
 .tiptap ul p,
 .tiptap ol p {
   @apply inline;
@@ -61,7 +62,7 @@
   
 }
 .tiptap {
-    @apply text-white
+    @apply text-white max-w-full overflow-auto p-2 lg:p-5 leading-6;
 }
 .tiptap ul, 
  .tiptap ol {
