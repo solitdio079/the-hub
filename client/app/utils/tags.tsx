@@ -1,6 +1,7 @@
 export const tags = [
     "Post",
-    "Javascript",
+    "JavaScript",
+    "TOP",
     "NodeJS",
     "HTML",
     "CSS",
